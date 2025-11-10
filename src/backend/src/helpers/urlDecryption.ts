@@ -10,6 +10,4 @@ function urlDecryption(url: string) {
   return cryptojs.AES.decrypt(url, secret).toString(cryptojs.enc.Utf8);
 }
 
-
-
 export { urlEncryption, urlDecryption };
